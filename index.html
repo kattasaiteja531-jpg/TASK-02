@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="overlay"></div>
+    
+    <div class="stopwatch-wrapper">
+      <div class="header">
+        <h1>Vintage Stopwatch</h1>
+        <p>Classic time measurement tool</p>
+      </div>
+
+      <div class="timer-card">
+        <div class="card-header">
+          <h2>⏰ Timer Display</h2>
+        </div>
+        <div class="card-content">
+          <div class="time-display" id="timeDisplay">00:00.00</div>
+          
+          <div class="controls">
+            <button id="startBtn" class="btn btn-start">▶ Start</button>
+            <button id="pauseBtn" class="btn btn-pause" style="display: none;">⏸ Pause</button>
+            <button id="resetBtn" class="btn btn-reset">↻ Reset</button>
+          </div>
+          
+          <button id="lapBtn" class="btn btn-lap" style="display: none;">Record Lap Time</button>
+        </div>
+      </div>
+
+      <div class="lap-card" id="lapCard" style="display: none;">
+        <div class="card-header">
+          <h3>Lap Times</h3>
+        </div>
+        <div class="card-content">
+          <div class="lap-list" id="lapList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Linking JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
